@@ -1,0 +1,19 @@
+{
+  "name": "YouTubeWhyd",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Make the youtube player default to wide",
+  "content_scripts": [
+    {
+      "matches": [ "*://*.youtube.com/*" ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "page_action": {
+    "default_title": "YouTubeWhyd - Make the youtube player default to wide"
+  },
+  "permissions": [
+    "https://www.youtube.com/*"
+  ]
+}
