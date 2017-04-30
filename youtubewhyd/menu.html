@@ -1,0 +1,45 @@
+<div class='menu'>
+  <span class="title">YouTubeWhyd</span><br>
+  <span class="desc">Force Theater Mode:</span>
+  <label class="switch">
+    <input id="enableSwitch" type="checkbox" checked>
+    <div class="lbldiv">
+      <p class="lbl"></p>
+    </div>
+  </label>
+</div>
+<style>
+  .title {font-weight: bold;}
+  .desc {line-height: 40px;}
+  .switch input {display: none;}
+  .menu {
+    height: 50px;
+    width: 180px;
+  }
+  .switch {
+    content: "";
+    display: block;
+    float: right;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  .lbldiv {
+    border-radius: 4px;
+    margin-top: -13px;
+
+  }
+  .lbl {
+    color: #fff;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+  }
+  input+.lbldiv {background: #808080;}
+  input:checked+.lbldiv {background: #e62117;}
+  input+.lbldiv>.lbl:before {content: "OFF"}
+  input:checked+.lbldiv>.lbl:before {content: "ON"}
+</style>
+<script src="options.js"></script>
