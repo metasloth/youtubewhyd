@@ -1,11 +1,5 @@
-var isEnabled
 chrome.storage.sync.get('enabled', function (items) {
   if (items.enabled || items.enabled == null) {
-    isEnabled = true
-  } else {
-    isEnabled = false
-  }
-  if (isEnabled) {
     document.addEventListener('spfdone', whyd)
     document.addEventListener('DOMContentLoaded', whyd)
     function whyd () {
