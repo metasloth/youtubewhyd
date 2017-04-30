@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Make the youtube player default to wide",
+  "homepage_url": "https://github.com/metasloth/youtubewhyd",
+  "icons": {
+    "128": "icon128.png"
+  },
   "content_scripts": [
     {
       "matches": [ "*://*.youtube.com/*" ],
